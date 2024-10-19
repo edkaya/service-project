@@ -1,12 +1,15 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark d-flex justify-content-between p-3 sticky-top">
-  <div>
-    <a class="navbar-brand" routerLink="/">FACILITY SERVICE HERO</a>
-  </div>
+  <a class="navbar-brand" routerLink="/">
+    <div class="d-flex align-items-center">
+      <mat-icon aria-hidden="false" aria-label="Home Icon" class="me-2" fontIcon="home" style="color: white"></mat-icon>
+      FACILITY SERVICE HERO
+    </div>
+  </a>
 
   <div>
     <ul class="navbar-nav mr-auto">
       <li class="nav-item small-screen">
-        <button mat-button [matMenuTriggerFor]="menu" style="color:var(--bs-secondary)">Menu</button>
+        <button [matMenuTriggerFor]="menu" mat-button style="color:var(--bs-secondary)">Menu</button>
         <mat-menu #menu="matMenu">
           <button mat-menu-item><a class="nav-link" routerLink="/">Home</a></button>
           <button mat-menu-item><a class="nav-link" routerLink="/services/montage">Services</a></button>
@@ -15,18 +18,18 @@
         </mat-menu>
       </li>
       <div class="big-screen">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/">Home <span class="sr-only"></span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/services/montage">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/about">Uber Uns</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/contact">Kontakt</a>
-      </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/services/montage">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about">Uber Uns</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact">Kontakt</a>
+        </li>
       </div>
     </ul>
   </div>
