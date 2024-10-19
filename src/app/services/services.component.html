@@ -1,0 +1,37 @@
+
+<div class="bg-dark">
+    <div class="d-flex justify-content-center">
+      <img alt="Italian Trulli" class="service-img" src="./assets/workers.png"/>
+    </div>
+  </div>
+  <div class="container mb-3">
+    <div class="bg-dark p-3 rounded-bottom-3">
+      <h3 class="text-white mb-0">Willkommen bei Facility Service Hero – Ihrem zuverlässigen Partner für alle
+        Heimreparaturen und Installationen. Ob Montage, Schlüsseldienst, Malerarbeiten, Handwerksdienste, Sanitär,
+        Elektro oder IT – wir sind für Sie da!</h3>
+    </div>
+  </div>
+<div [ngClass]="{'mb-5': activeLink == ''}">
+  <nav mat-tab-nav-bar [tabPanel]="tabPanel">
+    <a (click)="setActiveLink('montage')" [active]="activeLink == 'montage'" mat-tab-link
+       routerLink="/services/montage">Montage</a>
+    <a (click)="setActiveLink('schlüssel')" [active]="activeLink == 'schlüssel'" mat-tab-link
+       routerLink="/services/schlüssel">Schlüssel</a>
+    <a (click)="setActiveLink('maler')" [active]="activeLink == 'maler'" mat-tab-link
+       routerLink="/services/maler">Maler</a>
+    <a (click)="setActiveLink('handwerk')" [active]="activeLink == 'handwerk'" mat-tab-link
+       routerLink="/services/handwerk">Handwerk</a>
+    <a (click)="setActiveLink('sanitar')" [active]="activeLink == 'sanitar'" mat-tab-link
+       routerLink="/services/sanitar">Sanitär</a>
+    <a (click)="setActiveLink('elektro')" [active]="activeLink == 'elektro'" mat-tab-link
+       routerLink="/services/elektro">Elektro & IT</a>
+  </nav>
+  <mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
+  <router-outlet></router-outlet>
+</div>
+  @if (activeLink == '') {
+  <div class="d-flex justify-content-center align-items-center">
+    <h1 class="mt-5">Wählen Sie bitte eine Service aus</h1>
+  </div>
+  }
+

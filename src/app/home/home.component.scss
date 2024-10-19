@@ -1,0 +1,108 @@
+.custom-font-size {
+  font-size: 36px !important;
+}
+
+.custom-font-size-last {
+  font-size: 28px !important;
+}
+
+.main-png {
+  //width: 50%;
+  width: 100vw;
+  height: 40vh;
+  //opacity: 0.65;
+}
+
+.container {
+  position: relative;
+}
+
+.main-text {
+  position: absolute;
+  bottom: 0;
+}
+.card-img-top {
+  height: 60%;
+}
+
+.btn-services {
+  background-color: #9c774c;
+  color: white;
+
+  &:hover {
+    background-color: #B48C67;
+  }
+}
+.card {
+  transition: transform 0.2s linear;
+  height: 320px;
+  text-decoration: none;
+
+  &:hover {
+    transform: scale(1.020);
+    //background-color: rgba(229, 229, 229, 0.29);
+    cursor: pointer;
+    opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity));
+
+    .card-title, .card-text {
+        color: white;
+    }
+    .text-price {
+      color: #B48C67 !important;
+      font-weight: bold;
+    }
+  }
+}
+
+
+.mat-stepper-horizontal {
+  margin-top: 8px;
+}
+
+.mat-mdc-form-field {
+  margin-top: 16px;
+}
+
+::ng-deep .mat-horizontal-content-container {
+  padding-bottom: 0px !important;
+}
+
+::ng-deep .mat-horizontal-stepper-wrapper {
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  border-radius: 10px !important;
+}
+
+::ng-deep .mat-stepper-vertical {
+  padding-bottom: 0px !important;
+}
+
+::ng-deep .mat-stepper-vertical {
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  border-radius: 10px !important;
+}
+
+::ng-deep .mat-step-text-label {
+  color: white;
+}
+
+::ng-deep .mat-step-icon-state-done {
+  background-color: gray !important;
+}
+
+::ng-deep .mat-step-header .mat-step-icon-selected {
+  background-color: #9c774c;
+}
+
+::ng-deep .mat-stepper-horizontal-line {
+  background-color: #9c774c;
+}
+
+::ng-deep .mat-stepper-vertical-line::before {
+  background-color: #9c774c;
+}
+
+.text-step {
+  color: #d39247;
+}
+

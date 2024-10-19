@@ -1,0 +1,25 @@
+.a {
+  text-decoration: none;
+}
+
+.navbar {
+  --bs-bg-opacity: 0.97;
+  z-index: 10;
+}
+
+.big-screen {
+  display: flex;
+}
+
+.small-screen {
+  display: none;
+}
+
+@media screen and (max-width: 786px) {
+  .big-screen {
+    display: none;
+  }
+  .small-screen {
+    display: flex;
+  }
+}

@@ -1,0 +1,11 @@
+.service-img {
+  width: 60%;
+}
+
+::ng-deep .mdc-tab__text-label {
+  color: #9c774c !important;
+}
+
+::ng-deep .mat-mdc-tab-link .mdc-tab-indicator__content--underline {
+  border-color: #9c774c !important;
+}

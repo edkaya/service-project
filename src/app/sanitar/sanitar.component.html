@@ -1,0 +1,65 @@
+<div class="container mt-5">
+  <div class="d-flex justify-content-center">
+    <h1 class="mb-0 fw-bold">Sanitärservice</h1>
+  </div>
+  <div class="d-flex justify-content-center">
+    <h3 class="price-color">15€ pro Stunde</h3>
+  </div>
+  <div class="d-flex justify-content-center">
+    <h3 class="mb-4">Mit unserem Sanitärservice sind Sie auf der sicheren Seite! Wir übernehmen alle Arbeiten rund um Ihre sanitären Anlagen, von Reparaturen bis hin zu Neuanlagen, und sorgen für eine einwandfreie Funktionalität in Bad und Küche.</h3>
+  </div>
+  <div>
+    <h2>Servicebeschreibung</h2>
+    <h4>1. Um wie viele Installationen/Reparaturen handelt es sich insgesamt?</h4>
+    <mat-form-field>
+      <mat-label>Stück</mat-label>
+      <mat-select [(ngModel)]="selectedPiece" (selectionChange)="calculateMobelPiece()">
+        @for (number of numbers; track number) {
+          <mat-option [value]="number">{{ number }}</mat-option>
+        }
+      </mat-select>
+    </mat-form-field>
+
+    <h4>2. Deckenhöhe:</h4>
+    <mat-form-field>
+      <mat-label>Meter</mat-label>
+      <mat-select [(ngModel)]="selectedMeter" (selectionChange)="calculateMeter()">
+        <mat-option [value]="meters[0]"><{{ meters[0] }}m</mat-option>
+        <mat-option [value]="(meters[0] + meters[1])/2">{{ meters[0] }}m - {{ meters[1] }}m</mat-option>
+        <mat-option [value]="meters[1]">>{{ meters[1] }}m</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <div style="max-width: 600px">
+      <div class="d-flex justify-content-between">
+        <h4>3. Wird die Arbeit in einem Altbau durchgeführt?</h4>
+        <mat-slide-toggle [(ngModel)]="checkedValues[0]"></mat-slide-toggle>
+      </div>
+
+      <div class="d-flex justify-content-between">
+        <h4>4. Muss durch Fliese gebohrt werden?</h4>
+        <mat-slide-toggle [(ngModel)]="checkedValues[1]"></mat-slide-toggle>
+      </div>
+
+      <div class="d-flex justify-content-between">
+        <h4>5. Muss das Wasser abgestellt werden?</h4>
+        <mat-slide-toggle [(ngModel)]="checkedValues[2]"></mat-slide-toggle>
+      </div>
+
+      <div class="d-flex justify-content-between">
+        <h4>6. Ist Zugang zum Hauptwasserschalter vorhanden?</h4>
+        <mat-slide-toggle [(ngModel)]="checkedValues[3]"></mat-slide-toggle>
+      </div>
+
+      <div class="d-flex justify-content-between">
+        <h4>7. Weiterer Handwerker nötig?</h4>
+        <mat-slide-toggle [(ngModel)]="checkedValues[4]"></mat-slide-toggle>
+      </div>
+    </div>
+
+    <h2 class="mt-5">Kostenvoranschlag: {{ totalPrice }}€ + Anfahrt
+    </h2>
+  </div>
+
+
+</div>

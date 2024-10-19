@@ -1,0 +1,159 @@
+<div class="d-flex justify-content-center">
+  <img alt="Italian Trulli" class="main-png" src="./assets/main4.png"/>
+</div>
+<div class="container">
+  <div class="bg-dark rounded-bottom-3">
+    <div class="text-center p-3 main-text bg-dark">
+      <h1 class="fw-bold text-bg-dark">Ihr kompetenter Service für alle Handwerksarbeiten in München</h1>
+      <p class="fw-bold text-bg-dark">
+        Wir
+        bieten Ihnen professionelle und zuverlässige Lösungen für Reparaturen,
+        Montagen und Renovierungen. Unser erfahrenes Team steht Ihnen in München
+        schnell und unkompliziert zur Seite.
+      </p>
+      <a class="btn btn-services my-3" routerlink="/services">Services</a>
+    </div>
+  </div>
+</div>
+
+
+<section class="container-fluid text-left bg-light py-3 mt-3">
+  <h2 class="mb-4 custom-font-size">Unsere Services - bequem und unkompliziert</h2>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-2 col-md-4 col-6 justify-content-center d-flex mb-3">
+        <a routerLink="/services/montage" class="card" style="width: 13rem;">
+          <img alt="Card image cap" class="card-img-top" src="./assets/montage2.jpg">
+          <div class="card-body">
+            <h4 class="card-title mb-0 fw-bold">Montage</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <span class="text-secondary text-price">15€/Std</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-xl-2 col-md-4 col-6 justify-content-center d-flex mb-3">
+        <a routerLink="/services/schlüssel" class="card" style="width: 13rem;">
+          <img alt="Card image cap" class="card-img-top" src="./assets/keys.jpg">
+          <div class="card-body">
+            <h4 class="card-title mb-0 fw-bold">Schlüssel</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <span class="text-secondary text-price">15€/Std</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-xl-2 col-md-4 col-6 justify-content-center d-flex mb-3">
+        <a routerLink="/services/maler" class="card" style="width: 13rem;">
+          <img alt="Card image cap" class="card-img-top" src="./assets/paint.jpg">
+          <div class="card-body">
+            <h4 class="card-title mb-0 fw-bold">Maler</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <span class="text-secondary text-price">15€/Std</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-xl-2 col-md-4 col-6 justify-content-center d-flex mb-3">
+        <a routerLink="/services/handwerk" class="card" style="width: 13rem;">
+          <img alt="Card image cap" class="card-img-top" src="./assets/montage.jpg">
+          <div class="card-body">
+            <h4 class="card-title mb-0 fw-bold">Handwerk</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <span class="text-secondary text-price">15€/Std</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-xl-2 col-md-4 col-6 justify-content-center d-flex mb-3">
+        <a routerLink="/services/sanitar" class="card" style="width: 13rem;">
+          <img alt="Card image cap" class="card-img-top" src="./assets/sanitary.jpg">
+          <div class="card-body">
+            <h4 class="card-title mb-0 fw-bold">Sanitär</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <span class="text-secondary text-price">15€/Std</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-xl-2 col-md-4 col-6 justify-content-center d-flex mb-3">
+        <a routerLink="/services/elektro" class="card" style="width: 13rem;">
+          <img alt="Card image cap" class="card-img-top" src="./assets/elektro.jpg">
+          <div class="card-body">
+            <h4 class="card-title mb-0 fw-bold">Elektro & IT</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <span class="text-secondary text-price">15€/Std</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container-fluid text-left bg-light py-3 mt-3">
+  <h2 class="mb-4 custom-font-size">Wie funtioniert alles?</h2>
+  <mat-stepper [orientation]="orientation">
+    <mat-step label="Kontakt">
+      <div class="d-flex justify-content-center">
+        <h4 class="text-step">Kontaktieren Sie uns per WhatsApp.</h4>
+      </div>
+    </mat-step>
+
+    <mat-step label="Angebot">
+      <div class="d-flex justify-content-center">
+        <h4 class="text-step">Wir bereiten ein Angebot vor.</h4>
+      </div>
+    </mat-step>
+
+    <mat-step label="Service">
+      <div class="d-flex justify-content-center">
+        <h4 class="text-step">Die Service wird profesionell durchgeführt.</h4>
+      </div>
+    </mat-step>
+
+    <mat-step label="Fertig">
+      <div class="d-flex justify-content-center">
+        <h4 class="text-step">Bezahlen Sie ganz bequem mit Karte oder Bar.</h4>
+      </div>
+    </mat-step>
+
+
+    <!-- Icon overrides. -->
+    <ng-template matStepperIcon="phone">
+      <mat-icon>call_end</mat-icon>
+    </ng-template>
+    <ng-template matStepperIcon="chat">
+      <mat-icon>forum</mat-icon>
+    </ng-template>
+  </mat-stepper>
+</section>
+
+
+<h2 class="ms-3 mt-3 custom-font-size-last fw-bold">Haben Sie Fragen?</h2>
+<div class="container">
+  <div class="row mb-3">
+    <div class="col-12 col-sm-6 d-flex justify-content-center">
+      <div class="bg-dark p-3 rounded-3 mb-3">
+        <div class="d-flex flex-column">
+          <h3 class="text-center text-white">Wir sind nur einen Klick entfernt!</h3>
+          <div class="text-center">
+            <a class="btn btn-services" href="#">Kontakt</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 d-flex justify-content-center">
+      <div class="bg-dark p-3 rounded-3 mb-3">
+        <div class="d-flex flex-column">
+          <h3 class="text-center text-white" style="max-width: 300px;">Möchten Sie über uns mehr erfahren?</h3>
+          <div class="text-center">
+            <a class="btn btn-services" href="#">Über Uns</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
