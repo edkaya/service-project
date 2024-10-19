@@ -13,6 +13,10 @@
   //opacity: 0.65;
 }
 
+.ct {
+  position: relative;
+}
+
 .container {
   position: relative;
 }
@@ -23,6 +27,16 @@
 }
 .card-img-top {
   height: 60%;
+}
+
+@media screen and (max-width: 584px) {
+  .text-top {
+    font-size: 14px !important;
+  }
+
+  .text-bottom {
+    display: none;
+  }
 }
 
 .btn-services {
