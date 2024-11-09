@@ -8,4 +8,4 @@ This project serves as a website for a client named Facility Service Hero, which
 
 ## Website
 
-The website is still being developed, but you can access the website via [here](]https://facility-service-hero-project.vercel.app/home), which is currently hosted on vercel.
+The website is still being developed, but you can access the website via [here](https://facility-service-hero-project.vercel.app/home), which is currently hosted on vercel.
