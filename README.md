@@ -6,7 +6,7 @@ This project serves as a website for a client named Facility Service Hero, which
 
 The website is still being developed, but you can access the website via [here](https://service-project-beige.vercel.app/home), which is currently hosted on vercel.
 
-## Some Screenshots for of the Website
+## Some Screenshots of the Website
 
 ### Landing Page
 <img width="1488" height="1195" alt="Screenshot 2025-07-15 at 18 39 58" src="https://github.com/user-attachments/assets/8351d140-41b2-4b4d-856a-ea8f0325105c" />
